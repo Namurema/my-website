@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Brendah</title>
+  <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+  <link rel="icon" href="assets/favicon.ico">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+        <h1> Brendah Dev</h1>
+        <ul class="nav-links">
+          <li><a href="{{ url_for("home") }}">Home</a></li>
+          <li><a href="{{ url_for("about") }}" class="active">About</a></li>
+          <li><a href="{{ url_for("projects") }}">Projects</a></li>
+          <li><a href="{{ url_for("services") }}">Services</a></li>
+          <li><a href="{{ url_for("contact") }}">Contact</a></li>
+          </ul>
+          </nav>
+          </header>
+
+          <section class="about">
+            <div class="container">
+              <h2>About Me</h2>
+              <p>Hello! I am <strong>Brendah Namurema</strong>, a passionate freelance web developer with a background in economics and a strong drive for tech. I specialize in building beautiful and functional websites using HTML,CSS,Javascript, and Python</p>
+              <p>Whether it's a personal blog, business website , or a full-stack web Application- I can bring your ideas to life. I'm currently completing a fulltime Apprenticeship while freelancing on the side</p>
+              <p>When I'm not coding, I enjoy creating educational Content and growing my tech skills every single day</p>
+              
+              <h3>My Core Skills:</h3>
+              <ul class="skills-list">
+                <li> HTML, CSS,Javascript</li>
+                <li> Python, Django</li>
+                <li>  Responsive Web Design</li>
+                <li> Git and Github</li>
+                <li>  Client-focused Solutions</li>
+
+
+          
+              
+              </ul>
+
+            </div>
+          </section>
+
+        
+
+      
+  
+  <script src="{{url_for("static", filename="script.js") }}"></script>
+
+</body>
+</html>

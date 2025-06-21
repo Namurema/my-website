@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=">
+  <title>My Projects | Brendah Namurema</title>
+  <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for("home") }}">Home</a></li>
+        <li><a href="{{ url_for("about") }}">About</a></li>
+        <li><a href="{{ url_for("projects") }}" class="active">Projects</a></li>
+        <li><a  href="{{ url_for("services") }}">Services</a></li>
+        <li><a  href="{{ url_for("contact") }}"> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="projects-section">
+      <div class="container">
+        <h2 class="section-tittle">My Projects</h2>
+        <p class="section-description"> Some of the projects I have worked on to develop my skills and help real clients</p>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>About me site</h3>
+            <p> A responsive HTML and CSS site for myself
+</p> 
+            <a href="https://github.com/Namurema/About-me" target="_blank">View on Github</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>& copy; 2025 Brendah Namurema.All rights reserved</p>
+  </footer>
+  <script src="{{url_for("static", filename="script.js") }}"></script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | Brendah Namurema</title>
+   <link rel="stylesheet" href="{{ url_for("static", filename="style.css") }}">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="{{ url_for("home") }}">Home</a></li>
+        <li><a href="{{ url_for("about") }}">About</a></li>
+        <li><a href="{{ url_for("projects") }}">Projects</a></li>
+        <li><a  href="{{ url_for("services") }}"class="active">Services</a></li>
+        <li><a  href="{{ url_for("contact") }}"> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="services-section">
+      <div class="container">
+        <h2 class="section-title">My Services</h2>
+        <p class="section-description">Here is how I can help you or your business grow online</p>
+        <div class="services-grid">
+          <div class="service-card">
+            <h3>Website Maintenance</h3>
+            <p>On going Updates, bug fixes, and optimization to keep your site running smoothly</p>
+
+
+          </div>
+          <div class="service-card">
+            <h3>SEO and Performance</h3>
+            <p>Optimise your website's speed and visibilty for better ranking and user experience</p>
+
+
+          </div>
+          <div class="service-card">
+            <h3>Portfolio or Business Sites</h3>
+            <p>Build tailored portfolio or small business websites to help you stand out</p>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Namurema Brendah. All rights reserved.</p>
+     <script src="{{url_for("static", filename="script.js") }}"></script>
+  </footer>
+  
+</body>
+</html>
